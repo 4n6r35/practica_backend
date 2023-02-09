@@ -1,0 +1,26 @@
+html,
+body {
+    margin: 0px;
+    color: aqua;
+}
+
+.container-user {
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 25px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.container-user h1 {
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+.container-user #table_user {
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 25px;
+    background-color: whitesmoke;
+    padding: 20px;
+}

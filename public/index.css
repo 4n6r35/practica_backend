@@ -1,0 +1,25 @@
+html, body{
+    margin: 0px;
+    color:aqua;
+}
+
+.container {
+    margin: 0 auto;
+    width: 200px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+.container h1 {
+    font-family: 'Lucida Sans';
+}
+
+.container  > label{
+    font-size: 20px;
+    font-family: 'Gill Sans';
+}
+
+.container button{
+    margin-left: 300px;
+}
