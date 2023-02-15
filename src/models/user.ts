@@ -8,7 +8,6 @@ interface Attributes {
     name: string,
     cargo: string,
     email: string,
-    password: string,
     status: boolean,
 }
 type CreationAttributes = SetOptional<Attributes, 'id_user'>;
@@ -18,34 +17,31 @@ interface UserModel extends Model<Attributes, CreationAttributes>, Attributes { 
 // Se pueden establecer varios atributos opcionales a la vez
 
 const User = DataBase.define<UserModel>(
-        "User",
-        {
-            id_user: {
-                type: DataTypes.BIGINT,
-                primaryKey: true,
-                autoIncrement: true,
-            },
-            name: {
-                type: DataTypes.STRING
-            },
-            cargo: {
-                type: DataTypes.STRING
-            },
-            email: {
-                type: DataTypes.STRING,
-                unique: true,
-            },
-            password: {
-                type: DataTypes.TEXT,
-            },
-            status: {
-                type: DataTypes.BOOLEAN,
-                defaultValue: true
-            }
-        }, {
-        tableName: "users",
-        createdAt: true,
-        updatedAt: true,
-    });
+    "User",
+    {
+        id_user: {
+            type: DataTypes.BIGINT,
+            primaryKey: true,
+            autoIncrement: true,
+        },
+        name: {
+            type: DataTypes.STRING
+        },
+        cargo: {
+            type: DataTypes.STRING
+        },
+        email: {
+            type: DataTypes.STRING,
+            unique: true,
+        },
+        status: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: true
+        }
+    }, {
+    tableName: "users",
+    createdAt: true,
+    updatedAt: true,
+});
 
 export default User

@@ -1,8 +1,6 @@
 import { Request, Response } from "express";
 import User from "../models/user";
 import { DataBase } from "../db/db.config";
-import bcrypt from 'bcrypt';
-
 
 const getUsers = async (req: Request, res: Response) => {
     const users = await User.findAll();
@@ -26,16 +24,11 @@ const postUser = async (req: Request, res: Response) => {
     const transaction = await DataBase.transaction();
 
     try {
-        //Encriptar contraseña
-        const salt = bcrypt.genSaltSync();
-        const encryptpPassword = bcrypt.hashSync(password, salt);
-
         const user = await User.create({
             name,
             status,
             cargo,
-            email,
-            password: encryptpPassword
+            email
         }, {
             transaction
         })

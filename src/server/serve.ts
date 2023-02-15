@@ -4,6 +4,7 @@ import connect from "../db/db.config";
 import { dbenv } from '../environments/db.env';
 import router from "../routes/user.routes";
 import routeraut from "../routes/auth.routes";
+import routerregis from "../routes/registro.routes";
 import path from "path"
 
 class Server {
@@ -31,6 +32,7 @@ class Server {
     routes() {
         this.app.use(this.paths.user, router)
         this.app.use(this.paths.auth, routeraut)
+        this.app.use(this.paths.user, routerregis)
 
     }
 

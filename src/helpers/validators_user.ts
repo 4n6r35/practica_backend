@@ -1,5 +1,6 @@
 import User from "../models/user";
 
+
 const existe_email = async (email = '') => {
     //Verificar si email existe_email
     const verfEmail = await User.findOne({ where: { email } })
@@ -15,7 +16,6 @@ const ExistsUserbyID = async (id = '') => {
         throw new Error(`El id ${id} no existe`)
     }
 }
-
 
 export {
     existe_email,

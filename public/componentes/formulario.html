@@ -1,0 +1,38 @@
+<dialog id="container">
+    <form method="dialog" id="user_form">
+        <section>
+            <h1> Cargar nuevo usuario</h1>
+            <br>
+            <label>Correo</label>
+            <br>
+            <input class="inputem" name="email/correo" type="email">
+            <br>
+            <label>Nombre</label>
+            <br>
+            <input class="inputname" name="nombre" type="text">
+            <br>
+            <p><label for="Cargo">Cargo: </label>
+                <select id="favAnimal">
+                    <option></option>
+                    <option>Dev backend</option>
+                    <option>Dev frontend</option>
+                    <option>Dev movil</option>
+                    <option>DBA</option>
+                    <option>QA</option>
+                </select>
+            </p>
+        </section>
+        <br>
+        <br>
+        <menu>
+            <button id="cancel" type="reset">Cancel</button>
+            <button type="submit">Confirm</button>
+        </menu>
+    </form>
+</dialog>
+
+<menu>
+    <button id="btnsingIn" type="submit" class="btn btn-primary"> Guardar</button>
+</menu>
+
+<script src="/public/scripts/cmp.js">

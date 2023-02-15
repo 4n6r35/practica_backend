@@ -1,0 +1,183 @@
+.body {
+    background-color: #161616;
+    color: #757575;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.circle {
+    position: absolute;
+    top: 17%;
+    left: 23%;
+    transform: translate(-25%, -50%);
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#2bb8ff, #49ff80);
+    filter: blur(0px);
+    border-radius: 50%;
+
+}
+
+.c1 {
+    position: absolute;
+    top: 75%;
+    left: 71%;
+    transform: translate(-25%, -50%);
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#ff2b2b, #ff4983);
+    filter: blur(0px);
+    border-radius: 50%;
+
+}
+
+
+.container {
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: #00000022;
+
+}
+
+#login_from {
+    width: 100%;
+    background-color: #16161600;
+}
+
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.inputem {
+
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    background-color: #3e3e3e;
+    color: #fefefe;
+    font-size: 18px;
+    padding-left: 20px;
+
+
+}
+
+.text {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.btn {
+
+    margin-top: 20px;
+    margin-left: 160px;
+    margin-right: 80px;
+    height: 40px;
+    border-radius: 50px;
+    width: 50%;
+    border: 0;
+    color: #Fff;
+    background-color: #5f74ff;
+    font-size: 18px;
+}
+
+#btn_agregar {
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+
+    color: white;
+    border: 0px;
+    background-color: #5709ff;
+    border-radius: 50px;
+}
+
+.dialogFromUp {
+    border-radius: 10px;
+    background-color: #111111;
+    border: 0px;
+    width: 400px;
+    padding: 30px;
+    color: #5c5c5c;
+    flex-direction: row;
+    flex: content;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    justify-content: left;
+    font-size: 40px;
+    text-align: center;
+
+
+}
+
+.in {
+    margin-top: 20px;
+    /* font-size: 18px; */
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.inputem {
+    padding-left: 20px;
+    margin-top: 10px;
+    outline: 1px;
+    color: #7e7e7e;
+    font-weight: 700;
+    border: 1px;
+    background-color: #252525;
+    border-radius: 5px;
+    width: 50%;
+    height: 50px;
+}
+
+.custom_button {
+    border-radius: 50px;
+    width: 30%;
+    height: 40px;
+    font-weight: 900;
+    color: white;
+    background-color: #f63c3c;
+    border: 0px;
+    margin: 10px;
+
+
+
+}
+
+#add {
+    background-color: #005697;
+}
+
+.buttons {
+
+    justify-content: left;
+    /* margin-left: 32%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: content;
+    flex-direction: row;
+    width: 100%;
+}

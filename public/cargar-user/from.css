@@ -1,0 +1,140 @@
+.body{
+    background-color: #161616;
+    height: 97vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: #5c5c5c;
+
+
+}
+.ti{
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+    display: flex;
+
+}
+
+.numero{
+    width: 10%;
+}
+
+.ctable{
+
+background-color: #252525;
+height: 40px;
+font-size: 18px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: italic;
+color: #7e7e7e;
+}
+.table{width: 100%;}
+
+
+.trb{
+    height: 35px;
+    background-color: #161616;
+    text-align: center;
+    color: #7e7e7e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+#btn_agregar{
+    margin-top: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    
+    color: white;
+    border: 0px;
+    background-color: #5709ff;
+    border-radius: 50px;
+}
+
+.dialogFrom{
+    border-radius: 10px;
+    background-color: #111111;
+    border: 0px;
+    width: 30%;
+    padding: 30px;
+    color: #5c5c5c;
+    flex-direction: row;
+    flex: content;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title{
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+    
+    
+}
+.in{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.inputem{
+    padding-left: 20px;
+    outline: 1px;
+    color: #7e7e7e;
+    font-weight: 700;
+    border: 1px;
+    background-color: #252525;
+    border-radius: 5px;
+    width: 95%;
+    height: 50px;
+
+}
+
+.options{
+
+outline: 0px;
+border: #252525;
+color: #7e7e7e;
+width: 100%;
+border-radius: 5px;
+background-color: #252525;
+
+height: 50px;
+flex: content;
+
+}
+
+.custom_button{
+
+border-radius: 50px;
+width: 35%;
+height: 40px;
+font-weight: 900;
+color: white;
+background-color: #f63c3c;
+border: 0px;
+margin: 10px;
+
+
+
+}
+#add {
+    background-color: #005697;
+}
+
+.buttons{
+
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;
+    flex: content;
+    flex-direction: row;
+    width: 100%;
+}

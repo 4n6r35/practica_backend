@@ -7,7 +7,7 @@ import {
     deleteUser
 } from "../controller/users";
 import { check } from "express-validator";
-import { ExistsUserbyID, existe_email } from "../helpers/validators";
+import { ExistsUserbyID, existe_email } from "../helpers/validators_user";
 import Validar_campos from "../middlewares/validar_campos";
 import validarJWT from "../middlewares/validar_jwt";
 
@@ -23,7 +23,6 @@ router.get('/:id', [
 
 router.post('/', [
     check('name', 'EL nombre es obligatorio').not().isEmpty(),
-    check('password', 'Contraseña oblligatorio y debe ser más de 8 letras').isLength({ min: 8 }),
     check('email', 'correo no valido').isEmail(),
     check('email').custom(existe_email),
     Validar_campos
