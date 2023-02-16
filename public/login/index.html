@@ -25,17 +25,18 @@
 
             <div class="text">
                 <div> User</div>
-
                 <input class="inputem" name="email" type="email">
             </div>
 
             <div class="text">
                 <div>Password</div>
 
-                <input class="inputem" name="password" type="password">
+                <input class="inputem"  name="password" type="password"/>
             </div>
-            <button id="btnsignIn"  class="btn btn-primary"> Sign In</button>
-            <button id="btnsignUp"  class="btn btn-primary" onclick="dialogFromSignUp()">Sign Up</button>
+            <div class="login_buttons">
+                <button id="btnsignIn" class="btn btn-primary" type="submit"> Sign In</button>
+                <button id="btnsignUp" class="btn btn-primary" type="button" onclick="dialogFromSignUp()">Sign Up</button>
+            </div>
         </form>
     </div>
 
@@ -46,28 +47,28 @@
                 <div class="in">
                     <label>Name</label>
                     <br>
-                    <input class="inputem" name="first_name" type="text">
+                    <input class="inputem" name="name" type="text">
                 </div>
                 <div class="in">
                     <label>Lastname</label>
-                    <br/>
-                    <input class="inputem" name="first_surname" type="text">
-                <div class="in">
-                    <label>Email</label>
-                    <br/>
-                    <input class="inputem" name="email" type="email">
-                </div>
-                <div class="in">
-                    <label>Password</label>
-                    <br/>
-                    
-                    <input class="inputem" name="password" type="password">
-                </div>
+                    <br />
+                    <input class="inputem" name="lastname" type="text">
+                    <div class="in">
+                        <label>Email</label>
+                        <br />
+                        <input class="inputem" name="email" type="email">
+                    </div>
+                    <div class="in">
+                        <label>Password</label>
+                        <br />
+
+                        <input class="inputem" name="password" type="password">
+                    </div>
             </section>
-            <br/>
+            <br />
             <div class="buttons">
-                <button id="exit" type="reset" class="custom_button" >Exit</button>
-                <button type="submit" class="custom_button" id="add" >Register</button>
+                <button id="exit" type="reset" class="custom_button">Exit</button>
+                <button type="submit" class="custom_button" id="add">Register</button>
             </div>
         </form>
     </dialog>

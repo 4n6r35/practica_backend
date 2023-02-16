@@ -35,29 +35,29 @@
         </table>
     </div>
     <dialog id="dialogFrom" class="dialogFrom">
-        <form method="dialog">
+        <form method="dialog" id="add_user">
             <section>
                 <h1 class="title"> Add user</h1>
                 <br>
-                <div class="in"><label>Email</label>
-                    <br>
-                    <input class="inputem" name="email" type="email"></div>                
                 <div class="in">
                     <label>Name</label>
                     <br>
                     <input class="inputem" name="name" type="text">
+                <div class="in"><label>Email</label>
+                    <br>
+                    <input class="inputem" name="email" type="email"></div>                
                 </div>          
                 <div class="despl">
 
                     <p>
                         <div class="in">Cargo</div>
-                        <select id="favCargo" class="options">
-                            <option ></option>
-                            <option>Dev backend</option>
-                            <option>Dev frontend</option>
-                            <option>Dev movil</option>
-                            <option>DBA</option>
-                            <option>QA</option>
+                        <select id="favCargo" class="options" name="cargo">
+                            <option value=""></option>
+                            <option value="Dev backend">Dev backend</option>
+                            <option value="Dev frontend">Dev frontend</option>
+                            <option value="Dev movil">Dev movil</option>
+                            <option value="DBA">DBA</option>
+                            <option value="QA">QA</option>
                         </select>
                     </p>
                 </div>
@@ -72,6 +72,7 @@
         </form>
     </dialog>
     <script src="../scripts/cargarUser.js"></script>
+    <script src="../scripts/CrearUser.js"></script>
     <script src="../scripts/cmp.js"></script>
 </body>
 

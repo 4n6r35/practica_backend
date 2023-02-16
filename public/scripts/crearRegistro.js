@@ -26,9 +26,9 @@ registerUserForm.addEventListener('submit', async (e) => {
             throw new Error(dataResponse.msg)
         }
         
+
     } catch (error) {
-        console.log(error)
-        window.alert(error)
+        console.log("Error:",error)
     }
     favDialog.close();
 })

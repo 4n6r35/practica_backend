@@ -6,7 +6,6 @@ import bcrypt from 'bcrypt';
 const postRegistro = async (req: Request, res: Response) => {
     const { name, lastname, email, password } = req.body;
     const transaction = await DataBase.transaction();
-
     try {
         //Encriptar contraseña
         const salt = bcrypt.genSaltSync();
@@ -18,16 +17,16 @@ const postRegistro = async (req: Request, res: Response) => {
             email,
             password: encryptPassword
         },
-        {
-            transaction
-        })
+            {
+                transaction
+            })
         transaction.commit();
         res.json(registro)
     } catch (error) {
         transaction.rollback();
         console.log(error)
         res.status(500).json({
-            msg: 'El email ya se encuentra registrado'
+            msg: 'Error en el servidor'
         })
     }
 }

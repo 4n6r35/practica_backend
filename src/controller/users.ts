@@ -20,7 +20,7 @@ const getUser = async (req: Request, res: Response) => {
 }
 
 const postUser = async (req: Request, res: Response) => {
-    const { email, password, name, cargo, status } = req.body;
+    const { email, name, cargo, status } = req.body;
     const transaction = await DataBase.transaction();
 
     try {

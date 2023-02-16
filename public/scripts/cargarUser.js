@@ -36,6 +36,7 @@ const listUsers = async () => {
 
 const createUserTable = (users = []) => {
     const tableBody = document.getElementById("table_user_body")
+    tableBody.innerHTML = ''
     users.forEach(user => {
         const html = `
         <td scope="row" class="trb"> ${user.id_user} </td>                
